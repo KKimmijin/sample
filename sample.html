@@ -6,10 +6,130 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>sample.html</title>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<style>
+		body{
+			position: relative;
+			padding-top: 60px;
+		}
+
+		#navbar-example{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: black;
+			color:white;
+			opacity: 0.8;
+			padding: 10px;
+		}
+
+		.movieP{
+			padding-bottom: 20px;
+			padding-left: 15px;
+		}
+
+		#b{
+			background-color: black;
+		}
+
+	</style>
 </head>
-<body>
+<body data-target="#navbar-example" data-spy="scroll" data-offset="100">
+<div id="navbar-example">
+	<ul id="myNav" class="nav nav-pills">
+		<li class="active"><a href="#a">개봉영화</a></li>
+		<li><a href="#b">어벤져스</a></li>
+		<li><a href="#c">챔피언</a></li>
+		<li><a href="#d">살인소설</a></li>
+		<li><a href="#e">덕구</a></li>
+		<li><a href="#f">예매</a></li>
+	</ul>
+</div>
+<div class="container">
+	<div class="row">
+		<h1>개봉 영화</h1>
+		<div id="a">
+			<div class="col-xs-6 col-sm-3">			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">어벤져스:인피니티 워</h3>
+					</div>
+					<div class="panel-body" >
+						<img class="img-responsive movieP" src="images/movie1.png"/>
+						<p>새로운 조합을 이룬 어벤져스, 
+		 					역대 최강 빌런 타노스에 맞서 세계의 운명이 걸린 
+		 					인피니티 스톤을 향한 무한 대결이 펼쳐진다!.</p>
+					</div>
+					<div class="panel-footer">
+						<a href="#" class="btn btn-warning">예고편</a>
+						<a href="#" class="btn btn-danger">예매</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-3">			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">챔피언</h3>
+					</div>
+					<div class="panel-body" >
+						<img class="img-responsive movieP" src="images/movie2.png"/>
+						<p>미국 로스엔젤레스, 한 때 팔씨름 세계 챔피언을 꿈꿨지만 
+			 				지금은 클럽에서 일하는 ‘마크’(마동석)는
+			 				자칭 최고의 스포츠 에이전트 ‘진기’(권율)의 설득에 한국으로 돌아온다....</p>
+					</div>
+					<div class="panel-footer">
+						<a href="#" class="btn btn-warning">예고편</a>
+						<a href="#" class="btn btn-danger">예매</a>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix visible-xs-block"></div>
+			<div class="col-xs-6 col-sm-3">			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">살인소설</h3>
+					</div>
+					<div class="panel-body" >
+						<img class="img-responsive movieP" src="images/movie3.png"/>
+						<p>거짓말, 부패한 정치인, 더러운 돈, 함정, 의문의 죽음… 소설은 그렇게 시작됐다!
+							지방선거에 나설 집권여당 시장 후보로 지명되며 인생 최고의 순간을 맞은 ‘경석’(오만석).....</p>
+					</div>
+					<div class="panel-footer">
+						<a href="#" class="btn btn-warning">예고편</a>
+						<a href="#" class="btn btn-danger">예매</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-sm-3">			
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">덕구</h3>
+					</div>
+					<div class="panel-body" >
+						<img class="img-responsive movieP" src="images/movie4.png"/>
+						<p>"당신에게도 소중한 사람이 있습니까?"
+							어린 손자와 살고 있는 일흔 살 덕구 할배는
+			 				자신에게 주어진 시간이 얼마 남지 않음을 알게 된다....</p>
+					</div>
+					<div class="panel-footer">
+						<a href="#" class="btn btn-warning">예고편</a>
+						<a href="#" class="btn btn-danger">예매</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="b">
+			
+		</div>
+	</div>
+</div>
 
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>	
+<script>
+</script>
 </body>
 </html>
