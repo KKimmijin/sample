@@ -17,7 +17,7 @@
 			top: 0;
 			left: 0;
 			right: 0;
-			background-color: black;
+			background-color:black;
 			color:white;
 			opacity: 0.8;
 			padding: 10px;
@@ -28,15 +28,15 @@
 			padding-left: 15px;
 		}
 
-		#b{
-			background-color: black;
-		}
+
+
+
 
 	</style>
 </head>
 <body data-target="#navbar-example" data-spy="scroll" data-offset="100">
 <div id="navbar-example">
-	<ul id="myNav" class="nav nav-pills">
+	<ul id="myNav" class="nav nav-pills"">
 		<li class="active"><a href="#a">개봉영화</a></li>
 		<li><a href="#b">어벤져스</a></li>
 		<li><a href="#c">챔피언</a></li>
@@ -47,8 +47,8 @@
 </div>
 <div class="container">
 	<div class="row">
-		<h1>개봉 영화</h1>
 		<div id="a">
+			<h1>개봉 영화</h1>
 			<div class="col-xs-6 col-sm-3">			
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -120,16 +120,89 @@
 				</div>
 			</div>
 		</div>
+		
+	</div>
+</div>
+<div class="container" style="background-color: black">
+	<div class="row">
+		<div id="b">
+			<div class="col-xs-6 col-xs-offset-3">
+				<img src="images/atitle.png" class="img-responsive"/>
+			</div>	
+			<div class="col-xs-6 col-xs-offset-4">
+				<img src="images/xx.png" class="img-responsive" style="padding-bottom: 100px "/>
+			</div>		
+		</div>
+	</div>		
+</div>
 
-		<div class="b">
-			
+<div class="container" style="background-color: #242F33">
+	<div class="row">
+		<div id="c">
+			<div class="col-xs-6 col-xs-offset-3">
+				<img src="images/dddd.png" class="img-responsive" style="padding-bottom:50px;"/>
+			</div>
+			<div class="col-xs-6 col-xs-offset-4">
+				<img src="images/xx.png" class="img-responsive" style="padding-bottom: 100px "/>
+			</div>
 		</div>
 	</div>
 </div>
 
+<div class="container" style="background-color: #202528">
+	<div class="row">
+		<div id="d">
+			<div class="col-xs-6 col-xs-offset-3">
+				<img src="images/stitle.png" class="img-responsive" style="padding-bottom:50px;"/>
+			</div>
+			<div class="col-xs-6 col-xs-offset-4">
+				<img src="images/xx.png" class="img-responsive" style="padding-bottom: 100px "/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" style="background-color: #666141">
+	<div class="row">
+		<div id="e">
+			<div class="col-xs-6 col-xs-offset-3">
+				<img src="images/dtitle.png" class="img-responsive" style="padding-bottom:50px;"/>
+			</div>
+			<div class="col-xs-6 col-xs-offset-4">
+				<img src="images/xx.png" class="img-responsive" style="padding-bottom: 100px "/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" style="background: #999; padding-bottom:150px;">
+	<div id="f">
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<h3>영화 예매</h3>
+				<div class="dropdown">
+					<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">영화 선택
+					<!-- .caret은 아래 삼각형 -->
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="">어벤져스</a></li>
+						<li><a href="">챔피언</a></li>
+						<li><a href="">살인소설</a></li>
+						<li><a href="">덕구</a></li>
+					</ul>
+					<button class="btn btn-primary">확인</button>
+				</div>
+			</div>	
+		</div>	
+	</div>	
+</div>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>	
+<script src="js/jquery.smooth-scroll.js"></script>
 <script>
+	$("#myNav a").smoothScroll({
+		offset:-60
+	});
 </script>
 </body>
 </html>
